@@ -1,6 +1,12 @@
+// requiring modules
 var bodyParser = require("body-parser");
 var express = require("express");
+var path = require("path");
+
+// initializing express app
 var app = express();
+
+// setting up port
 var PORT = process.env.PORT || 8080;
 
 app.get("/", function(req, res) {
@@ -19,6 +25,7 @@ app.use(function(req, res) {
   res.end(JSON.stringify(req.body, null, 2));
 });
 
+// listening to port
 app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);
 });
