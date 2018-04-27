@@ -12,8 +12,8 @@
         crossorigin="anonymous">
 
     <!-- CDN version for jquery and popper -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 
@@ -269,78 +269,6 @@
                 alert("Please fill out all fields before submitting!");
             }
         });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // // Capture the form inputs
-        // $("#submit").on("click", (function (event) {
-        //     event.preventDefault();
-        //     console.log('BUTTON CLICKED')
-
-        //     // Form validation
-        //     function validateForm() {
-        //         var isValid = true;
-        //         $(".form-control").each(function () {
-        //             if ($(this).val() === "") {
-        //                 isValid = false;
-        //             }
-        //         });
-
-        //         $(".chosen-select").each(function () {
-        //             if ($(this).val() === "") {
-        //                 isValid = false;
-        //             }
-        //         });
-        //         return isValid;
-        //     }
-
-        //     // If all required fields are filled
-        //     if (validateForm()) {
-        //         // Create an object for the user's data
-        //     }
-        //     var newEntry = {
-        //         name: $('#name').val().trim(),
-        //         photo: $('#photo').val(),
-        //         scores: [
-        //             $('#q1 :selected').val().trim(),
-        //             $('#q2 :selected').val().trim(),
-        //             $('#q3 :selected').val().trim(),
-        //             $('#q4 :selected').val().trim(),
-        //             $('#q5 :selected').val().trim(),
-        //             $('#q6 :selected').val().trim(),
-        //             $('#q7 :selected').val().trim(),
-        //             $('#q8 :selected').val().trim(),
-        //             $('#q9 :selected').val().trim(),
-        //             $('#q10 :selected').val().trim(),
-        //         ]
-        //     }
-            // console.log('NEW ENTRY: ' + newEntry)
-            // // AJAX post the data to the API.
-            // $.post('http://localhost:3000/api/new', newEntry, function (data) {
-
-            // })
-
-
-        // })
 
     </script>
 
