@@ -9,3 +9,11 @@ Daniel Shook
 <h3>Overview</h3>
 This full-stack site will take in results from users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
 <br>
+<h2>Technologies used</h2>
+
+    * Node.js
+    * Express.js
+    * JavaScript
+    * jQuery
+    * HTML
+    * Bootstrap
