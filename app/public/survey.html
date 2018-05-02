@@ -240,11 +240,10 @@
             var userData = {
                 name: $('#name').val().trim(),
                 photo: $('#photo').val().trim(),
-                scores: [$('#q1 :selected').val(), $('#q2:selected').val(), $('#q3 :selected').val(), $('#q4 :selected').val(), $('#q5 :selected').val(),
-                $('#q6 :selected').val(), $('#q7 :selected').val(), $('#q8 :selected').val(), $('#q9 :selected').val(), $('#q10 :selected').val()]
+                scores: Array.of($('#q1').val(), $('#q2').val(), $('#q3').val(), $('#q4').val(), $('#q5').val(),
+                    $('#q6').val(), $('#q7').val(), $('#q8').val(), $('#q9').val(), $('#q10').val())
             }
-            console.log('USER DATA: ' + JSON.stringify(userData))
-
+            console.log('USER DATA: ' + (userData))
             // AJAX post the data to the friends API.
             if (userData) {
                 $.post("/api/new", userData, function (data) {

@@ -11,9 +11,13 @@ module.exports = function(app) {
       photo: req.body.photo,
       scores: req.body.scores
     };
+    console.log("BODY", req.body);
+
     var userScores = newFriend.scores;
     var userData = req.body;
-    var userScores = userData.scores;
+
+    var userScores = userData["scores[]"];
+
     console.log("USER SCORES : " + userScores);
     console.log("NEW FRIEND : " + JSON.stringify(newFriend));
   });
