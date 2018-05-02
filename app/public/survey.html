@@ -246,20 +246,22 @@
             console.log('USER DATA: ' + JSON.stringify(userData))
 
             // AJAX post the data to the friends API.
-            $.post("/api/new", userData, function (data) {
-                // console.log("USER DATA: " + userData);
-                // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-                //$("#match-name").text(data.name);
-                //$("#match-img").attr("src", data.photo);
+            if (userData) {
+                $.post("/api/new", userData, function (data) {
+                    console.log("USER DATA: " + userData);
+                    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                    $("#match-name").text(data.name);
+                    $("#match-img").attr("src", data.photo);
 
-                // Show the modal with the best match
-                //$("#results-modal").modal("toggle");
+                    // Show the modal with the best match
+                    $("#results-modal").modal("toggle");
 
-            });
-            // } else {
-            //     alert("Please fill out all fields before submitting!");
-            // }
+                });
+            } else {
+                alert("Please fill out all fields before submitting!");
+            }
         });
+
 
     </script>
 
